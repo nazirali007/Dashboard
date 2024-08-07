@@ -12,14 +12,13 @@ import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 const demo = [
     {
         image: <ShoppingBasketIcon />,
-
         title: "Total Order",
-        value: 75,
+        value: "75",
         hike: "3%"
     }, {
         image: <LocalMallIcon />,
         title: "Total Delivered",
-        value: 70,
+        value: "70",
         hike: "-2%"
     }, {
         image: <RemoveShoppingCartIcon />,
@@ -36,10 +35,10 @@ const demo = [
 
 const Card = () => {
     return (
-        <Grid container gap={3}>
+        <Grid container gap={3} >
             <Grid gap={1} item container xs={12} sm={12} md={12} lg={7}  >
-                {demo.map((data, index) => (
-                    <Grid item xs={12} sm={5.9} md={2.89} lg={2.89} key={index} sx={{ backgroundColor: "#202027" }} padding={2} borderRadius={2}>
+                {demo.map((data) => (
+                    <Grid item xs={12} sm={5.9} md={2.92} lg={2.89} key={data?.value} sx={{ backgroundColor: "#202027" }} padding={2} borderRadius={2}>
                         <Box display="flex" alignItems="start" >
                             <ListItemAvatar >
                                 <Avatar sx={{ backgroundColor: "#ed915f", opacity: "0.8", width: 56, height: 56, marginRight: "1rem" }}>
@@ -66,9 +65,8 @@ const Card = () => {
                         </Box>
                     </Grid>
                 ))}
-
             </Grid >
-            <Grid item xs={12} sm={12} md={4.7} sx={{ backgroundColor: "#202027" }} borderRadius={2} >
+            <Grid item xs={12} sm={12} md={12} lg={4.7} sx={{ backgroundColor: "#202027" }} borderRadius={2} >
                 <Grid container>
                     <Grid item xs={12} sm={6} md={7} lg={7} >
                         <Grid textAlign={"start"} padding={2}>

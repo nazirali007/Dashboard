@@ -9,21 +9,25 @@ import StarIcon from '@mui/icons-material/Star';
 
 const demo = [
     {
+        id: 101,
         image: 'https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg',
         name: "Brad Pitt",
         value: 3,
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eius nesciunt reprehenderit ducimus sit in aut minus, incidunt atque tempore laudantium dolorem commodi explicabo voluptatibus."
     }, {
+        id: 102,
         image: 'https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png',
         name: "Pitbull",
         value: 5,
         description: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eius nesciunt reprehenderit ducimus sit in aut minus, incidunt atque tempore laudantium dolorem commodi explicabo voluptatibus."
     }, {
+        id: 103,
         image: 'https://img.freepik.com/premium-photo/3d-avatar-cartoon-character_113255-95054.jpg',
         name: "Arnold",
         value: 3,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla id, quo exercitationem dicta inventore voluptatum esse incidunt repellat earum nihil?  ",
     }, {
+        id: 104,
         image: 'https://img.freepik.com/premium-photo/3d-avatar-cartoon-character_113255-93999.jpg',
         name: "Dwayne Johnson",
         value: 1,
@@ -37,8 +41,8 @@ const CustomerFeedback = () => {
             <Typography variant='h6'>
                 Customer's Feedback
             </Typography>
-            {demo.map((data, index) => (
-                <Box key={index} sx={{ borderBottom: '0.1rem solid #3f3f40', marginTop: "1rem" }}>
+            {demo.map((data) => (
+                <Box key={data?.id} sx={{ borderBottom: '0.1rem solid #3f3f40', marginTop: "1rem" }}>
                     <Box sx={{ display: "flex", alignItems: "center" }}>
                         <Avatar src={data?.image} sx={{ marginRight: 2 }} />
                         <Typography variant='body1'>

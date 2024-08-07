@@ -54,13 +54,13 @@ const ApexChart = () => {
 
     return (
         <div id="chart" style={{ width: '100%', maxWidth: '400px', height: 'auto' }}>
-            <ReactApexChart
+            <ReactApexChart style={{ marginBottom: "none !important", padding: "none" }}
                 options={chartData.options}
                 series={chartData.series}
                 type="radialBar"
                 height={200}
             />
-            <Typography pb={2} fontSize={"12px"}>The value here has been rounded off.</Typography>
+            <Typography sx={{ marginBottom: "none" }} fontSize={"12px"}>The value here has been rounded off.</Typography>
         </div>
     );
 };

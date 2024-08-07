@@ -6,7 +6,7 @@ import DashMenu from './DashMenu';
 
 const Activity = () => {
     return (
-        <Grid container gap={3}>
+        <Grid container gap={3} >
             <Grid item xs={12} sm={12} md={12} lg={7} sx={{ backgroundColor: "#202027" }} borderRadius={2} >
                 <Box display={"flex"} justifyContent={"space-between"} alignItems={"center"} paddingX={2} paddingTop={2}>
                     <Typography variant="h6">Activity</Typography>

@@ -138,11 +138,10 @@ export default function Dashboard() {
                 </DrawerHeader>
 
                 <List sx={{ backgroundColor: "#333333", height: '100%', display: 'flex', flexDirection: 'column' }}>
-
                     <div>
                         {icons.map((text, index) => (
                             <ListItem
-                                key={text}
+                                key={index}
                                 disablePadding
                                 sx={{
                                     display: 'block',
