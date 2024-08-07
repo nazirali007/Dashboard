@@ -5,8 +5,6 @@ import Typography from '@mui/material/Typography';
 import { Avatar } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
 
-
-
 const demo = [
     {
         id: 101,

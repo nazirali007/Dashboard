@@ -8,8 +8,6 @@ import TableRow from '@mui/material/TableRow';
 import { Avatar, Box, Grid, Stack, Typography } from '@mui/material';
 import CustomerFeedback from './CustomerFeedback';
 
-
-
 const avatarImages = {
     'Wade Warren': 'https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg',
     'Jane Cooper': 'https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small_2x/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png',

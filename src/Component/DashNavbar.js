@@ -8,18 +8,12 @@ import InputBase from '@mui/material/InputBase';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import SettingsIcon from '@mui/icons-material/Settings';
-import { Avatar, Badge, Fab } from '@mui/material';
+import { Avatar, Badge } from '@mui/material';
 
-
-const demo = [{
-    image: 'https://img.freepik.com/premium-photo/graphic-designer-digital-avatar-generative-ai_934475-9292.jpg',
-    name: "Tom Herry",
-},]
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -195,10 +189,7 @@ export default function DashNavbar() {
                             color="inherit"
                             sx={{ height: "2.3rem", marginTop: "0.8rem", backgroundColor: "#878787" }}
                         >
-                            {/* <Fab size="small" disabled aria-label="mail"> */}
                             <MailIcon fontSize='small' />
-                            {/* </Fab> */}
-
                         </IconButton>
                         <IconButton
                             size="medium"

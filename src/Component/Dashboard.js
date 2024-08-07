@@ -14,7 +14,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import DraftsIcon from '@mui/icons-material/Drafts';
 import Navbar from './DashNavbar';
 import Card from './Card';
 import Activity from './Activity';
@@ -104,16 +103,22 @@ export default function Dashboard() {
         setActiveIndex(index);
     };
 
+    const handleDrawerOpen = () => {
+        setOpen(!open);
+    };
+
+
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar position="fixed" open={open} sx={{ backgroundColor: "#202027" }}>
+            <AppBar position="fixed" open={open}
+                sx={{ backgroundColor: "#202027" }}>
                 {/* <Toolbar > */}
                 <Box sx={{ display: "flex", marginLeft: "1.3rem" }}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
-                        // onClick={handleDrawerOpen}
+                        onClick={handleDrawerOpen}
                         edge="start"
                         sx={{
                             marginRight: 2,
@@ -131,7 +136,7 @@ export default function Dashboard() {
                 sx={{ backgroundColor: "#202027" }}   >
                 <DrawerHeader>
                     <IconButton
-                    // onClick={handleDrawerClose}
+                        onClick={handleDrawerOpen}
                     >
                         {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
                     </IconButton>
