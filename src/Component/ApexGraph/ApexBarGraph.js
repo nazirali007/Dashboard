@@ -2,7 +2,7 @@ import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 
 const ApexBarGraph = () => {
-    const [state, setState] = React.useState({
+    const state = {
         series: [{
             name: 'Inflation',
             data: [12.3, 13.1, 4.0, 10.1, 6.0, 13.6, 9.2, 2.3, 1.4, 0.8, 10.5, 19.2]
@@ -95,7 +95,7 @@ const ApexBarGraph = () => {
                 }
             }
         }
-    });
+    };
 
     return (
         <div>
